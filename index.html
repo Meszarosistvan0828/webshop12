@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+
+<body onchange="cso()">
+  <div class="row">
+    <div class="col-md-12" id="fejlec">
+      <p>  <span id="kosarka">🛒</span> <span id="db" style="float: right;">0</span></p>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="card">
+      <div class="image">
+        <img src="konti2.png">
+      </div>
+      <div class="title">
+        <h1>Sony Ps5 Kontroller</h1>
+      </div>
+      <div class="des">
+        <p>Ára: 27 990Ft</p>
+        <button onclick="elvesz1()">-</button>
+        <input type="number" min="0" id="pskonti" value="0" onchange="nyomas()">
+        <button onclick="hozzaad1()">+</button>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image">
+        <img src="konti1.avif">
+      </div>
+      <div class="title">
+        <h1>Microsoft Xbox Kontroller</h1>
+      </div>
+      <div class="des">
+        <p>Ára: 23 990Ft</p>
+        <button onclick="elvesz2()">-</button>
+         <input type="number" min="0" id="boxkonti" value="0"onchange="nyomas()"> 
+         <button onclick="hozzaad2()">+</button>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image">
+        <img src="Sony_PlayStation_5_Disk_Edition_825_GB-i2408839.png">
+      </div>
+      <div class="title">
+        <h1>Sony Ps5</h1>
+      </div>
+      <div class="des">
+        <p>Ára: 199 990Ft</p>
+        <button onclick="elvesz3()">-</button> 
+        <input type="number" min="0" id="pskonzol" value="0"onchange="nyomas()"> <button
+          onclick="hozzaad3()">+</button>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image">
+        <img src="xboxkonzol.png">
+      </div>
+      <div class="title">
+        <h1>Microsoft Xbox Series X</h1>
+      </div>
+      <div class="des">
+        <p>Ára: 219 990Ft</p>
+        <button onclick="elvesz4()">-</button> 
+        <input type="number" min="0" id="boxkonzol" value="0"onchange="nyomas()"> <button
+          onclick="hozzaad4()">+</button>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="image">
+        <img src="boxallomas.jpg">
+      </div>
+      <div class="title">
+        <h1>Microsoft Xbox Kontroller Töltőállomás</h1>
+      </div>
+      <div class="des">
+        <p>Ára: 5 490Ft</p>
+        <button onclick="elvesz5()">-</button> 
+        <input type="number" min="0" id="boxallomas" value="0"onchange="nyomas()"> <button
+          onclick="hozzaad5()">+</button>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image">
+        <img src="asd11.jpg">
+      </div>
+      <div class="title">
+        <h1>Usb c type cable from mehico</h1>
+      </div>
+      <div class="des">
+        <p>Ára: 1 190Ft</p>
+        <button onclick="elvesz6()">-</button>
+         <input type="number" min="0" id="usbc" value="0"onchange="nyomas()"> <button
+          onclick="hozzaad6()">+</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image">
+        <img src="parna.png">
+      </div>
+      <div class="title">
+        <h1>Joy párna xbox és ps Kontrollerekhez</h1>
+      </div>
+      <div class="des">
+        <p>Ára: 990Ft</p>
+        <button onclick="elvesz7()">-</button>
+         <input type="number" min="0" id="parna" value="0"onchange="nyomas()"> <button
+          onclick="hozzaad7()">+</button>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row" id="adatos">
+      <br>
+      <div class="col-md-6" id="adatos">
+        <h1>Számlázás</h1>
+        <p><input type="text" placeholder="Név" id="nev" onchange="csovaz()"></p>
+        <p><input type="number" placeholder="Irányítószám" min="0" id="isz" onchange="csovaz()"> <input type="text" placeholder="Település" id="telepules" onchange="csovaz()"> </p>
+        <p><input type="text" placeholder="Utca,házszám" id="utcahaz" onchange="csovaz()"></p>
+        <p><input type="text" placeholder="email" id="email" onchange="csovaz()"> <input type="text" placeholder="Telefonszám" id="teloszam" onchange="csovaz()"></p>
+      </div>
+      <div class="col-md-6" id="adatos">
+        <h1>Szállítás</h1>
+        <p><input type="text" placeholder="Név" id="nev1"></p>
+        <p><input type="number" placeholder="Irányítószám" min="0" id="isz1"> <input type="text" placeholder="Település" id="telepules1"> </p>
+        <p><input type="text" placeholder="Utca,házszám" id="utcahaz1"></p>
+        <p> <input type="checkbox" id="csecs" onclick="csecskk()"> Beleegyezik a számlázási adatokba!</p>
+      </div>
+    </div>
+    <hr>
+    <br>
+    <div>
+    </div>
+</body>
+</html>
