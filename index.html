@@ -146,12 +146,40 @@
         <p><input type="text" placeholder="Név" id="nev1"></p>
         <p><input type="number" placeholder="Irányítószám" min="0" id="isz1"> <input type="text" placeholder="Település" id="telepules1"> </p>
         <p><input type="text" placeholder="Utca,házszám" id="utcahaz1"></p>
-        <p> <input type="checkbox" id="csecs" onclick="csecskk()"> Beleegyezik a számlázási adatokba!</p>
+        <p> <input type="checkbox" id="csecs" onclick="csovaz()"> Beleegyezik a számlázási adatokba!</p>
       </div>
     </div>
-    <hr>
     <br>
-    <div>
+    <div class="row" id="adatos">
+      <div class="col-md-6" id="adatos">
+        <h1>Fizetés</h1>
+        <legend>Select a maintenance drone:</legend>
+
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey"
+                 checked>
+          <label for="huey">Utánvétel(490Ft)</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey">
+          <label for="dewey">Kártyás Fizetés</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie">
+          <label for="louie">Banki átutalás</label>
+        </div>
+    </fieldset>
+  
+       <button>Megrendelés</button>
+     </div>
+      <div class="col-md-6" id="adatos">
+  sadsdasdaasd
+      </div>
     </div>
+
+
+ 
 </body>
 </html>

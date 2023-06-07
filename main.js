@@ -10,7 +10,6 @@ function elvesz1() {
                 alert("Nem lehet a kosárban negatív szám")
                 document.getElementById("pskonti").value++;
         }
-
         document.getElementById("pskonti").value--;
         nyomas()
 }
@@ -73,6 +72,7 @@ function hozzaad7() {
 
         document.getElementById("parna").value++;
         nyomas()
+
 }
 function elvesz7() {
         if (document.getElementById("parna").value <= 0) {
@@ -109,46 +109,37 @@ function cso() {
 
         osszfiz = fizetendo1 + fizetendo2 + fizetendo3 + fizetendo4 + fizetendo5 + fizetendo6 + fizetendo7
         osszdb = boxkonzoldb + boxkontidb + boxallomasdb + pskontidb + pskonzoldb + parnadb + usbcdb
+        console.log(osszdb)
 }
 
 function nyomas() {
         cso()
-        document.getElementById("ar").innerHTML = osszfiz;
         document.getElementById("db").innerHTML = osszdb;
 }
 
 
 
-function csovaz()
-{
+function csovaz() {
         var nev = document.getElementById("nev").value
         var isz = document.getElementById("isz").value
         var telepules = document.getElementById("telepules").value
         var utcahaz = document.getElementById("utcahaz").value
         var email = document.getElementById("email").value
         var teloszam = document.getElementById("teloszam").value
-        
-        console.log(iga)
 
-}
-
-
-function csecskk()
-{
-csovaz()
-
-        if(document.getElementById("csecs").checked == 1){
-                document.getElementById("nev1").value = nev   
+        if (document.getElementById("csecs").checked == 1) {
+                document.getElementById("nev1").value = nev
                 document.getElementById("isz1").value = isz
-                document.getElementById("telepules1").value = telepules 
+                document.getElementById("telepules1").value = telepules
                 document.getElementById("utcahaz1").value = utcahaz
         }
-        if(document.getElementById("csecs").checked==0)
-        {
-        document.getElementById("nev1").value = 0
-        document.getElementById("isz1").value = 0
-        document.getElementById("telepules1").value = 0
-        document.getElementById("utcahaz1").value = 0
+        if (document.getElementById("csecs").checked == 0) {
+                document.getElementById("nev1").value = ""
+                document.getElementById("isz1").value = ""
+                document.getElementById("telepules1").value = ""
+                document.getElementById("utcahaz1").value = ""
         }
 }
+
+
 
