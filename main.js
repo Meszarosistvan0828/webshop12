@@ -124,6 +124,7 @@ function csovaz() {
         var isz = document.getElementById("isz").value
         var telepules = document.getElementById("telepules").value
         var utcahaz = document.getElementById("utcahaz").value
+
         var email = document.getElementById("email").value
         var teloszam = document.getElementById("teloszam").value
 
@@ -142,17 +143,32 @@ function csovaz() {
 }
 
 
-function megrendeles()
-{ 
-if(osszfiz<20000)
+function megrendeles(){
+var nemtom = 0;
+var elsoresz = 0;
+var masodikresz = 0;
+
+        if (osszfiz < 20000) {
+                elsoresz = 1490
+        }
+        if (document.getElementById("utanvetel").checked == 1) {
+                masodikresz = 490
+        }
+        var xd = elsoresz + masodikresz + osszfiz
+        document.getElementById("vegfiz").innerHTML = xd + "Ft a fizetendő összeg"
+
+if(osszdb==0)
 {
-osszfiz+=1490
+        alert("Üres a kosarad!")
 }
-if(document.getElementById("utanvetel").checked == 1)
-{
-osszfiz+=490
-}
-document.getElementById("vegfiz").innerHTML = osszfiz+"Ft a fizetendő összeg"
+
+
+
+
+
+
+
+
 }
 
 
