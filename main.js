@@ -142,4 +142,17 @@ function csovaz() {
 }
 
 
+function megrendeles()
+{ 
+if(osszfiz<20000)
+{
+osszfiz+=1490
+}
+if(document.getElementById("utanvetel").checked == 1)
+{
+osszfiz+=490
+}
+document.getElementById("vegfiz").innerHTML = osszfiz+"Ft a fizetendő összeg"
+}
+
 
